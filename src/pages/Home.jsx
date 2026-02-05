@@ -6,21 +6,19 @@ import schemes from "../data/schemes"
 import { useLanguage } from "../context/LanguageContext"
 import NGOSchemes from "../components/NGOSchemes"
 
-
 export default function Home() {
   const { t } = useLanguage()
   const navigate = useNavigate()
 
   const ngoSchemes = schemes.filter(s => s.type === "ngo")
-  const csrSchemes = schemes.filter(s => s.type === "csr")
 
   return (
     <>
       {/* Hero */}
       <section className="max-w-7xl mx-auto px-6 pt-24 text-center">
-        <h1 className="text-5xl font-bold leading-tight">
-          {t.heroTitle1} <br />
-          <span className="text-green-500">{t.heroTitle2}</span>
+        <h1 className="text-5xl font-bold leading-tight text-gray-900 dark:text-white">
+          Schemes <br />
+          <span className="text-green-500">Made Easy</span>
         </h1>
 
         <button
@@ -35,9 +33,6 @@ export default function Home() {
       <HowItWorks />
       <Categories />
       <NGOSchemes />
-
-
-     
     </>
   )
 }

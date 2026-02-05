@@ -27,62 +27,69 @@ export default function Navbar() {
   return (
     <>
       <header
-        className="fixed top-0 left-0 w-full z-50
-        bg-slate-900/90 backdrop-blur border-b border-white/10"
+        className="
+          fixed top-0 left-0 w-full z-50
+          bg-white dark:bg-slate-900
+          border-b border-gray-200 dark:border-white/10
+          backdrop-blur
+        "
       >
         <div className="max-w-7xl mx-auto px-6 py-3 flex items-center gap-6">
 
           {/* Logo */}
           <div
-            className="font-bold text-xl cursor-pointer"
+            className="
+              font-bold text-xl cursor-pointer
+              text-gray-900 dark:text-white
+            "
             onClick={() => navigate("/")}
           >
             <span className="text-green-500">Jann</span>Connect
           </div>
 
-          {/* Search Bar */}
-          <form
-            onSubmit={handleSearch}
-            className="hidden md:block flex-1"
-          >
+          {/* Search */}
+          <form onSubmit={handleSearch} className="hidden md:block flex-1">
             <input
               value={query}
               onChange={e => setQuery(e.target.value)}
               placeholder={t.searchPlaceholder}
-              className="w-full px-4 py-2 rounded bg-slate-800 text-white
-                         placeholder-white/50 focus:ring-2 focus:ring-green-500"
+              className="
+                w-full px-4 py-2 rounded
+                bg-gray-100 dark:bg-slate-800
+                text-gray-900 dark:text-white
+                placeholder-gray-500
+                focus:ring-2 focus:ring-green-500
+              "
             />
           </form>
 
           {/* Right Controls */}
-          <div className="flex items-center gap-3">
-
-            {/* Theme Toggle */}
+          <div className="flex items-center gap-3 text-gray-900 dark:text-white">
+            {/* Theme */}
             <button
               onClick={toggleTheme}
-              className="w-9 h-9 border border-white/20 rounded"
-              title="Toggle theme"
+              className="w-9 h-9 border border-gray-300 dark:border-white/20 rounded"
             >
               {theme === "dark" ? "🌙" : "☀️"}
             </button>
 
-            
-
-            {/* Language Button */}
+            {/* Language */}
             <button
               onClick={() => setLangOpen(true)}
-              className="px-3 py-2 border border-white/20 rounded text-sm"
+              className="px-3 py-2 border border-gray-300 dark:border-white/20 rounded text-sm"
             >
               🌐 {lang.toUpperCase()}
             </button>
 
-            {/* Auth Section */}
+            {/* Auth */}
             {user ? (
               <>
-                <span className="text-sm">Hi, {user.name}</span>
+                <span className="text-sm font-medium">
+                  Hi, {user.name}
+                </span>
                 <button
                   onClick={logout}
-                  className="px-3 py-2 border border-white/20 rounded text-sm"
+                  className="px-3 py-2 border border-gray-300 dark:border-white/20 rounded text-sm"
                 >
                   Logout
                 </button>
@@ -99,14 +106,8 @@ export default function Navbar() {
         </div>
       </header>
 
-      {/* Popups */}
-      {langOpen && (
-        <LanguagePopup onClose={() => setLangOpen(false)} />
-      )}
-
-      {accessOpen && (
-        <AccessibilityPanel onClose={() => setAccessOpen(false)} />
-      )}
+      {langOpen && <LanguagePopup onClose={() => setLangOpen(false)} />}
+      {accessOpen && <AccessibilityPanel onClose={() => setAccessOpen(false)} />}
     </>
   )
 }
