@@ -1,4 +1,4 @@
-# 🌐 JannConnect
+# JannConnect
 
 ### One Platform for Government & NGO Welfare Schemes
 
@@ -7,7 +7,7 @@
 
 ---
 
-## 🚩 Problem
+## Problem
 
 Millions of citizens are unaware of welfare schemes because:
 
@@ -19,7 +19,7 @@ Millions of citizens are unaware of welfare schemes because:
 
 ---
 
-## 💡 Solution
+## Solution
 
 **JannConnect** is a unified platform that helps citizens:
 
@@ -30,9 +30,9 @@ Millions of citizens are unaware of welfare schemes because:
 
 ---
 
-## ✨ Key Features
+## Key Features
 
-### 🔎 Scheme Discovery
+### Scheme Discovery
 
 * Government and NGO schemes in one place
 * Category-based browsing
@@ -42,7 +42,7 @@ Millions of citizens are unaware of welfare schemes because:
   * Government
   * NGO
 
-### 📄 Simplified Scheme Details
+### Simplified Scheme Details
 
 Each scheme includes:
 
@@ -53,7 +53,7 @@ Each scheme includes:
 * Step-by-step application guide
 * Direct “Apply Now” link
 
-### ♿ Accessibility Tools
+### Accessibility Tools
 
 * Font size adjustment
 * High contrast mode
@@ -62,13 +62,13 @@ Each scheme includes:
 * Reduced motion
 * Floating accessibility panel
 
-### 🌍 Multi-Language Support
+### Multi-Language Support
 
 * English
 * Hindi
 * Language switch across all pages
 
-### 👤 User Features
+### User Features
 
 * Sign-in system
 * Personalized browsing
@@ -76,7 +76,7 @@ Each scheme includes:
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 ### Frontend
 
@@ -99,7 +99,7 @@ Each scheme includes:
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 src/
@@ -135,7 +135,7 @@ src/
 
 ---
 
-## ⚙️ Installation & Setup
+## Installation & Setup
 
 ### 1️⃣ Clone the repository
 
@@ -164,7 +164,7 @@ http://localhost:5173
 
 ---
 
-## 🚀 Build for Production
+## Build for Production
 
 ```
 npm run build
@@ -172,7 +172,7 @@ npm run build
 
 ---
 
-## 🌐 Deployment
+## Deployment
 
 Deployed using **Netlify**.
 
@@ -181,7 +181,7 @@ Live URL:
 
 ---
 
-## 🔮 Future Improvements
+## Future Improvements
 
 * AI-based scheme recommendations
 * Real-time government API integration
@@ -191,13 +191,13 @@ Live URL:
 
 ---
 
-## 👨‍💻 Author
+## Author
 
-**Atharv Pandab**
+**Team Cookies Of the Dark Web**
 Project: **JannConnect**
 
 ---
 
 ## 📜 License
 
-This project is for HackElite Hackathon.
+This project is for the HackElite Hackathon.
