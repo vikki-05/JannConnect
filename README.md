@@ -1,151 +1,203 @@
-JannConnect
+# 🌐 JannConnect
 
-JannConnect is a unified platform that helps citizens easily discover, understand, and apply for Government and NGO welfare schemes in a simple and accessible way.
+### One Platform for Government & NGO Welfare Schemes
 
-The platform simplifies complex scheme details into clear summaries, supports multi-language access, and includes accessibility features to ensure inclusivity for all users.
+🔗 **Live Demo:**
+`[JannConnect](https://jannconnect.netlify.app)`
 
-Live Demo
-You can access the deployed website here:https://jannconnect.netlify.app/
+---
 
-Problem Statement
+## 🚩 Problem
 
-Many citizens are unaware of government and NGO schemes because:
+Millions of citizens are unaware of welfare schemes because:
 
-Information is scattered across multiple portals
+* Information is scattered across multiple portals
+* Schemes have complex eligibility rules
+* Official documents are difficult to understand
+* Limited accessibility support
+* Language barriers
 
-Schemes have complex eligibility rules
+---
 
-Official documents are difficult to understand
+## 💡 Solution
 
-Lack of accessibility features for differently-abled users
+**JannConnect** is a unified platform that helps citizens:
 
-Limited language support
+* Discover **Government and NGO schemes**
+* Understand them through **simple summaries**
+* Access them with **language and accessibility support**
+* Apply directly through official links
 
-Solution
+---
 
-JannConnect provides:
+## ✨ Key Features
 
-A single platform for Government and NGO schemes
+### 🔎 Scheme Discovery
 
-Simple summaries of complex scheme documents
+* Government and NGO schemes in one place
+* Category-based browsing
+* Tabbed results:
 
-Language switching (English & Hindi)
+  * All
+  * Government
+  * NGO
 
-Accessibility tools for inclusive access
+### 📄 Simplified Scheme Details
 
-Smart filtering based on user needs
+Each scheme includes:
 
-Key Features
-Scheme Discovery
+* Overview
+* Benefits
+* Eligibility
+* Required Documents
+* Step-by-step application guide
+* Direct “Apply Now” link
 
-Browse Government and NGO schemes
+### ♿ Accessibility Tools
 
-Category-based search
+* Font size adjustment
+* High contrast mode
+* Grayscale mode
+* Dyslexia-friendly font
+* Reduced motion
+* Floating accessibility panel
 
-Tabbed results (All | Government | NGO)
+### 🌍 Multi-Language Support
 
-Scheme Details
+* English
+* Hindi
+* Language switch across all pages
 
-Overview
+### 👤 User Features
 
-Benefits
+* Sign-in system
+* Personalized browsing
+* Extendable for saved schemes
 
-Eligibility
+---
 
-Required documents
+## 🛠 Tech Stack
 
-Step-by-step application process
+### Frontend
 
-Direct “Apply Now” links
+* React (Vite)
+* Tailwind CSS 3.4
+* JavaScript (ES6)
 
-Accessibility
+### Routing
 
-Font size control
+* React Router
 
-High contrast mode
+### State Management
 
-Grayscale mode
+* React Context API
 
-Dyslexia-friendly font
+  * LanguageContext
+  * ThemeContext
+  * AccessibilityContext
+  * AuthContext
 
-Reduced motion option
+---
 
-Floating accessibility panel
+## 📁 Project Structure
 
-Multi-Language Support
+```
+src/
+│
+├── components/
+│   ├── Navbar.jsx
+│   ├── Stats.jsx
+│   ├── HowItWorks.jsx
+│   ├── Categories.jsx
+│   ├── Footer.jsx
+│   ├── AccessibilityPanel.jsx
+│   └── FilterPanel.jsx
+│
+├── pages/
+│   ├── Home.jsx
+│   ├── SearchResults.jsx
+│   ├── SchemeDetails.jsx
+│   ├── SignIn.jsx
+│   └── About.jsx
+│
+├── context/
+│   ├── LanguageContext.jsx
+│   ├── ThemeContext.jsx
+│   ├── AccessibilityContext.jsx
+│   └── AuthContext.jsx
+│
+├── data/
+│   └── schemes.js
+│
+├── App.jsx
+└── main.jsx
+```
 
-English
+---
 
-Hindi
+## ⚙️ Installation & Setup
 
-Language switch works across all pages
+### 1️⃣ Clone the repository
 
-User Features
+```
+git clone https://github.com/YOUR_USERNAME/jannconnect.git
+cd jannconnect
+```
 
-Sign-in system
+### 2️⃣ Install dependencies
 
-Personalized scheme browsing
-
-Save/bookmark schemes (extendable)
-
-Tech Stack
-Frontend
-
-React (Vite)
-
-Tailwind CSS 3.4
-
-JavaScript (ES6)
-
-Routing
-
-React Router
-
-State Management
-
-React Context API
-
-LanguageContext
-
-ThemeContext
-
-AccessibilityContext
-
-AuthContext
-
-Installation & Setup
-1. Clone the repository
-https://github.com/Atharv-start/JannConnect.git
-2. Install dependencies
+```
 npm install
-3. Run the development Server
+```
+
+### 3️⃣ Run the development server
+
+```
 npm run dev
-Build for Production
+```
+
+Open in browser:
+
+```
+http://localhost:5173
+```
+
+---
+
+## 🚀 Build for Production
+
+```
 npm run build
+```
 
-Deployment 
-This Project is deployed using Netlify 
-Live URL:https://jannconnect.netlify.app/
+---
 
+## 🌐 Deployment
 
-Future Improvements
+Deployed using **Netlify**.
 
-AI-based scheme recommendations
+Live URL:
+`[JannConnect](https://jannconnect.netlify.app)`
 
-Real-time government API integration
+---
 
-User dashboard with saved schemes
+## 🔮 Future Improvements
 
-Mobile app version
+* AI-based scheme recommendations
+* Real-time government API integration
+* User dashboard with saved schemes
+* Mobile app version
+* Voice-based search
 
-Voice-based scheme search
+---
 
-Team / Author
+## 👨‍💻 Author
 
-Atharv Pandab
-Full-Stack Developer
-Project: JannConnect
+**Atharv Pandab**
+Project: **JannConnect**
 
-License
+---
 
-This project is created for educational and demonstration purposes.
+## 📜 License
+
+This project is for HackElite Hackathon.
