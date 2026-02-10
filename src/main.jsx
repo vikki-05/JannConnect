@@ -7,6 +7,10 @@ import { ThemeProvider } from "./context/ThemeContext"
 import { AuthProvider } from "./context/AuthContext"
 import { AccessibilityProvider } from "./context/AccessibilityContext"
 import { LanguageProvider } from "./context/LanguageContext"
+import { uploadSchemesToFirestore } from "./services/uploadSchemes"
+
+uploadSchemesToFirestore()
+
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
